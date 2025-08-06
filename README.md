@@ -2,7 +2,7 @@
 
 > **The architect wolf for Code-Coders who care about clean structure**
 
-[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://open-vsx.org) [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt) [![CodeWolf](https://img.shields.io/badge/CodeWolf-Ecosystem-red?style=for-the-badge&logo=wolf)](https://4wavelabs.com)
+[![Extension](https://img.shields.io/badge/VS_Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://open-vsx.org) [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt) [![CodeWolf](https://img.shields.io/badge/CodeWolf-Ecosystem-red?style=for-the-badge)](https://4wavelabs.com)
 
 ## 🎯 **Mission**
 
@@ -187,6 +187,6 @@ If CodeWolf has helped you organize your code and improve your architecture, con
 
 *Keep your code organized and healthy - This is the CodeWolf way!* 🐺
 
-[![Follow on GitHub](https://img.shields.io/github/followers/4wavelabs?style=social)](https://github.com/4wavelabs)
+
 
 </div>
