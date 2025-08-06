@@ -2,7 +2,7 @@
 
 > **The architect wolf for Code-Coders who care about clean structure**
 
-[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://github.com/kwatsy/codewolf-file-health-scanner)
+[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://open-vsx.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt)
 [![CodeWolf](https://img.shields.io/badge/CodeWolf-Ecosystem-red?style=for-the-badge&logo=wolf)](https://4wavelabs.com)
 
@@ -35,8 +35,10 @@ CodeWolf File Health Scanner helps **Code-Coders** (newbie AI coders) organize t
 ### Installation
 1. Open VS Code
 2. Go to Extensions (`Ctrl+Shift+X`)
-3. Search for "CodeWolf File Health Scanner"
-4. Click **Install**
+3. Search for **"CodeWolf"** to find all CodeWolf extensions
+4. Install **"CodeWolf File Health Scanner"**
+
+*Also available on [Open VSX Registry](https://open-vsx.org) - search for "CodeWolf"*
 
 ### Usage
 Open the **Command Palette** (`Ctrl+Shift+P`) and choose:
