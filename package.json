@@ -1,0 +1,195 @@
+{
+  "name": "codewolf-file-health-scanner",
+  "displayName": "🐺 CodeWolf File Health Scanner",
+  "description": "🏗️ Keep your code organized and healthy - The architect wolf for Code-Coders who care about clean structure",
+  "version": "1.0.10",
+  "publisher": "codewolf",
+  "author": {
+    "name": "Watsy",
+    "email": "watsy@4wavelabs.com",
+    "url": "https://4wavelabs.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4wavelabs/codewolf-file-health-scanner"
+  },
+  "bugs": {
+    "url": "https://github.com/4wavelabs/codewolf-file-health-scanner/issues"
+  },
+  "homepage": "https://github.com/4wavelabs/codewolf-file-health-scanner#readme",
+  "icon": "images/icon.png",  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Linters",
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "file-health",
+    "code-organization",
+    "project-structure",
+    "architecture",
+    "refactoring",
+    "clean-code",
+    "file-analysis",
+    "code-quality",
+    "codewolf",
+    "code-coders",
+    "project-health",
+    "structure-analysis"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codewolf.scanCurrentFile",
+        "title": "🐺 CodeWolf Files: Scan Current File",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.scanSelectedFolder",
+        "title": "🐺 CodeWolf Files: Scan Selected Folder",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.scanEntireWorkspace",
+        "title": "🐺 CodeWolf Files: Scan Entire Workspace",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.generateHealthReport",
+        "title": "🐺 CodeWolf Files: Generate Health Report",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.scanFileHealth",
+        "title": "📝 CodeWolf Files: Scan File Health",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.scanProjectHealth",
+        "title": "🏗️ CodeWolf Files: Scan Project Structure",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.suggestRefactoring",
+        "title": "💡 CodeWolf Files: Get Refactoring Suggestions",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.clearDiagnostics",
+        "title": "🧹 CodeWolf Files: Clear All Problems",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.refreshDiagnostics",
+        "title": "🔄 CodeWolf Files: Refresh All Problems",
+        "category": "CodeWolf Files"
+      },
+      {
+        "command": "codewolf.configureThresholds",
+        "title": "⚙️ CodeWolf Files: Configure File Size Thresholds",
+        "category": "CodeWolf Files"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "codewolf.scanFileHealth",
+          "when": "resourceExtname =~ /\\.(js|ts|jsx|tsx|vue|py|java|cs|php)$/",
+          "group": "codewolf"
+        },
+        {
+          "command": "codewolf.scanProjectHealth",
+          "when": "explorerResourceIsFolder",
+          "group": "codewolf"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "codewolf.scanFileHealth",
+          "when": "resourceExtname =~ /\\.(js|ts|jsx|tsx|vue|py|java|cs|php)$/",
+          "group": "codewolf"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "codewolf.scanCurrentFile",
+        "key": "ctrl+shift+alt+f",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "codewolf.scanEntireWorkspace",
+        "key": "ctrl+shift+alt+w",
+        "when": "workspaceFolderCount > 0"
+      },
+      {
+        "command": "codewolf.generateHealthReport",
+        "key": "ctrl+shift+alt+r",
+        "when": "workspaceFolderCount > 0"
+      }
+    ],
+    "configuration": {
+      "title": "🐺 CodeWolf File Health Scanner",
+      "properties": {
+        "codewolfHealth.maxHealthyFileSize": {
+          "type": "number",
+          "default": 300,
+          "minimum": 50,
+          "maximum": 1000,
+          "description": "Maximum lines for a healthy file (green). Files under this threshold are considered well-organized.",
+          "markdownDescription": "**Healthy File Threshold** \n\nFiles with fewer lines than this are marked as 🟢 **healthy**. \n\n*Recommended: 200-400 lines depending on your project type*"
+        },
+        "codewolfHealth.criticalFileSize": {
+          "type": "number",
+          "default": 500,
+          "minimum": 100,
+          "maximum": 2000,
+          "description": "Lines threshold for critical file size warning (red). Files over this threshold need immediate attention.",
+          "markdownDescription": "**Critical File Threshold** \n\nFiles with more lines than this are marked as 🔴 **critical** and should be refactored. \n\n*Recommended: 400-800 lines depending on complexity tolerance*"
+        },
+        "codewolfHealth.enableRealTimeScanning": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable real-time file health monitoring"
+        },
+        "codewolfHealth.excludePatterns": {
+          "type": "array",
+          "default": [
+            "node_modules/**",
+            "dist/**",
+            "build/**",
+            ".next/**",
+            "coverage/**",
+            "*.min.js",
+            "*.bundle.js"
+          ],
+          "description": "File patterns to exclude from health scanning"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "canvas": "^3.1.2"
+  }
+}
