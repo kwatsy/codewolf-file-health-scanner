@@ -2,9 +2,7 @@
 
 > **The architect wolf for Code-Coders who care about clean structure**
 
-[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://open-vsx.org)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt)
-[![CodeWolf](https://img.shields.io/badge/CodeWolf-Ecosystem-red?style=for-the-badge&logo=wolf)](https://4wavelabs.com)
+[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)](https://open-vsx.org) [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE.txt) [![CodeWolf](https://img.shields.io/badge/CodeWolf-Ecosystem-red?style=for-the-badge&logo=wolf)](https://4wavelabs.com)
 
 ## 🎯 **Mission**
 
