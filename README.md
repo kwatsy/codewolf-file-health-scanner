@@ -188,6 +188,6 @@ If CodeWolf has helped you organize your code and improve your architecture, con
 *Keep your code organized and healthy - This is the CodeWolf way!* 🐺
 
 [![Follow on GitHub](https://img.shields.io/github/followers/4wavelabs?style=social)](https://github.com/4wavelabs)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-orange?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/codewolf)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-orange?style=flat&logo=ko-fi)](https://ko-fi.com/watsy)
 
 </div>
