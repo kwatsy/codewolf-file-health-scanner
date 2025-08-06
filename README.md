@@ -159,7 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 
 **CodeWolf File Health Scanner is completely FREE** and always will be! 🎉
 
-If CodeWolf has helped you organize your code and improve your architecture, consider supporting the project! ☕
+If CodeWolf has helped you organize your code and improve your architecture, consider supporting the project by buying me a coffee!
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-☕-orange.svg)](https://ko-fi.com/watsy)
 
@@ -188,6 +188,5 @@ If CodeWolf has helped you organize your code and improve your architecture, con
 *Keep your code organized and healthy - This is the CodeWolf way!* 🐺
 
 [![Follow on GitHub](https://img.shields.io/github/followers/4wavelabs?style=social)](https://github.com/4wavelabs)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-orange?style=flat&logo=ko-fi)](https://ko-fi.com/watsy)
 
 </div>
